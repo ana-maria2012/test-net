@@ -1,0 +1,105 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  background-color: #fbfbfb;
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#fbfbfb', end-colourStr='#dadada');
+  background-image: linear-gradient(top, #fbfbfb 0%, #dadada 100%);
+  background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #fbfbfb), color-stop(100%, #dadada));
+  font-family: 'Droid Serif', serif;
+  font-size: 1em; }
+
+#page {
+  margin: 165px 0; }
+
+.section {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 550px;
+  width: 100%; }
+
+h1 {
+  font-size: 1.875em;
+  margin-left: 20px; }
+
+p {
+  font-size: 0.875em;
+  margin-left: 20px; }
+  p.intro {
+    margin-bottom: 70px;
+    max-width: 440px; }
+
+.table {
+  display: table;
+  font-size: 1.125em;
+  margin-bottom: 50px;
+  width: 100%; }
+  .table .table-row {
+    display: table-row; }
+  .table .table-heading {
+    display: table-header-group; }
+  .table .table-body {
+    display: table-row-group; }
+    .table .table-body .table-row:nth-child(2) {
+      background: #ddd; }
+  .table .table-foot {
+    display: table-footer-group;
+    color: #666; }
+    .table .table-foot .table-cell {
+      padding: 15px 15px 0 15px; }
+    .table .table-foot .table-row.subtotal .table-cell {
+      padding-top: 0; }
+    .table .table-foot .table-row.total {
+      color: #000;
+      font-weight: bold; }
+  .table .table-cell,
+  .table .table-head {
+    display: table-cell; }
+  .table .table-cell {
+    padding: 15px; }
+  .table .table-head {
+    border-bottom: 2px solid #999;
+    font-weight: bold;
+    padding: 15px 15px 0 15px; }
+  .table input {
+    border: 1px solid #999;
+    display: inline-block;
+    font-family: 'Droid Serif', serif;
+    font-size: 1em;
+    padding: 8px;
+    text-align: right;
+    width: 50px;
+    vertical-align: middle; }
+  .table .buttons {
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle; }
+  .table button[class*=btn] {
+    width: 18px;
+    height: 18px;
+    background: #999;
+    border: none;
+    cursor: pointer; }
+    .table button[class*=btn].plus-btn:after {
+      content: "+";
+      color: #FFF; }
+    .table button[class*=btn].minus-btn:after {
+      content: "-";
+      color: #FFF; }
+  .table .warning input {
+    border: 1px solid red; }
+
+button[type="submit"] {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background: #000066;
+  border: 0;
+  box-shadow: 5px 5px 5px rgba(127, 125, 125, 0.71);
+  color: #FFF;
+  float: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 12px 8px; }

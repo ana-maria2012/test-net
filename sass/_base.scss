@@ -1,0 +1,37 @@
+// Variables
+
+$content-width: 550px;
+
+$h1-size: 1.875em;
+$font-size: 0.875em;
+$table-size: 1.125em;
+$button-size: 1.5em;
+
+$border: #999;
+$bg-gradient-one: #fbfbfb;
+$bg-gradient-two: #dadada;
+$bg-table-row: #ddd;
+$bg-font-table: #666;
+$bg-font: #000;
+$bg-bottom: #000066;
+$bg-text-bottom: #FFF;
+
+@mixin bg-gradient($start-colour, $end-colour) {
+    background-color: $start-colour;
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');
+    background-image: -webkit-linear-gradient(top, $start-colour 0%, $end-colour 100%);
+    background-image:    -moz-linear-gradient(top, $start-colour 0%, $end-colour 100%);
+    background-image:     -ms-linear-gradient(top, $start-colour 0%, $end-colour 100%);
+    background-image:      -o-linear-gradient(top, $start-colour 0%, $end-colour 100%);
+    background-image:         linear-gradient(top, $start-colour 0%, $end-colour 100%);
+    background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, $start-colour), color-stop(100%,$end-colour));
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+

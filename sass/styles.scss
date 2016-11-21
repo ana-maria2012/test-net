@@ -1,0 +1,148 @@
+@import 'base';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    @include bg-gradient($bg-gradient-one, $bg-gradient-two);
+    font-family: 'Droid Serif', serif;
+    font-size: 1em;
+}
+
+#page {
+    margin: 165px 0;
+}
+
+.section {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: $content-width;
+    width: 100%;
+}
+
+h1 {
+    font-size: $h1-size;
+    margin-left: 20px;
+}
+
+p {
+    font-size: $font-size;
+    margin-left: 20px;
+
+    &.intro {
+        margin-bottom: 70px;
+        max-width: 440px;
+    }
+}
+
+.table {
+    display: table;
+    font-size: $table-size;
+    margin-bottom: 50px;
+    width: 100%;
+
+    .table-row {
+        display: table-row;
+    }
+
+    .table-heading {
+        display: table-header-group;
+    }
+
+    .table-body {
+        display: table-row-group;
+
+        .table-row:nth-child(2) {
+            background: $bg-table-row;
+        }
+    }
+
+    .table-foot {
+        display: table-footer-group;
+        color: $bg-font-table;
+
+        .table-cell {
+            padding: 15px 15px 0 15px;
+        }
+
+        .table-row {
+            &.subtotal .table-cell {
+                padding-top: 0;
+            }
+
+            &.total {
+                color: $bg-font;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .table-cell,
+    .table-head {
+        display: table-cell;
+    }
+
+    .table-cell {
+        padding: 15px;
+    }
+
+    .table-head {
+        border-bottom: 2px solid $border;
+        font-weight: bold;
+        padding: 15px 15px 0 15px;
+    }
+
+    input {
+        border: 1px solid $border;
+        display: inline-block;
+        font-family: 'Droid Serif', serif;
+        font-size: 1em;
+        padding: 8px;
+        text-align: right;
+        width: 50px;
+        vertical-align: middle;
+    }
+
+    .buttons {
+        width: 16px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    button[class*=btn] {
+        width: 18px;
+        height: 18px;
+        background: $border;
+        border: none;
+        cursor: pointer;
+
+        &.plus-btn:after {
+            content: "+";
+            color: $bg-text-bottom;
+
+        }
+
+        &.minus-btn:after {
+            content: "-";
+            color: $bg-text-bottom;
+
+        }
+    }
+
+    .warning input {
+        border: 1px solid red;
+    }
+}
+
+button[type="submit"] {
+    @include border-radius(12px);
+    background: $bg-bottom;
+    border: 0;
+    box-shadow: 5px 5px 5px rgba(127, 125, 125, 0.71);
+    color: $bg-text-bottom;
+    float: right;
+    font-size: $button-size;
+    font-weight: bold;
+    padding: 12px 8px;
+}

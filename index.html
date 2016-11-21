@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test Senior Front End NetCentric</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <div class="section">
+                <div class="logo"><img src="images/netcentric-logo.png"></div>
+            </div>
+        </header>
+        <main>
+            <div class="section">
+                <h1>Your Basket</h1>
+                <p class="intro">Items you have added to your basket are shown below.
+                Adjust the quantities or remove items before continuing your purchase.</p>
+
+                <div class="table">
+                    <div class="table-heading">
+                        <div class="table-head">Product</div>
+                        <div class="table-head">Price</div>
+                        <div class="table-head">Qty</div>
+                        <div class="table-head">Cost</div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-row">
+                            <div class="table-cell">Cotton T-Shirt, Medium</div>
+                            <div class="table-cell price">1.99</div>
+                            <div class="table-cell">
+                                <div class="quantity">
+                                      <input type="text" name="name" value="1">
+                                      <div class="buttons">
+                                          <button class="plus-btn" type="button" name="button">
+                                          </button>
+                                          <button class="minus-btn" type="button" name="button">
+                                          </button>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="table-cell price-total">1.99</div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Baseball Cap, One Size</div>
+                            <div class="table-cell price">£2.99</div>
+                            <div class="table-cell">
+                                <div class="quantity">
+                                      <input type="text" name="name" value="2">
+                                      <div class="buttons">
+                                          <button class="plus-btn" type="button" name="button">
+                                          </button>
+                                          <button class="minus-btn" type="button" name="button">
+                                          </button>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="table-cell price-total"></div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">Swim Shorts, Medium</div>
+                            <div class="table-cell price">£3.99</div>
+                            <div class="table-cell">
+                                <div class="quantity">
+                                      <input type="text" name="name" value="1">
+                                      <div class="buttons">
+                                          <button class="plus-btn" type="button" name="button">
+                                          </button>
+                                          <button class="minus-btn" type="button" name="button">
+                                          </button>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="table-cell price-total">1.99</div>
+                        </div>
+                    </div>
+                    <div class="table-foot">
+                        <div class="table-row">
+                            <div class="table-cell">Subtotal</div>
+                            <div class="table-cell">11.96</div>
+                        </div>
+                         <div class="table-row subtotal">
+                            <div class="table-cell">VAT @ 20%</div>
+                            <div class="table-cell">3.99</div>
+                        </div>
+                        <div class="table-row total">
+                            <div class="table-cell">Total Cost</div>
+                            <div class="table-cell">3.99</div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Buy Now >></button>
+            </div>
+        </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
